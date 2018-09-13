@@ -21,7 +21,7 @@
 - name: Copy get-pip.py
   copy:
     src: get-pip.py
-    dest: ~/get-pip.py
+    dest: $HOME/get-pip.py
   when: need_pip is failed
 
 - name: Install pip
@@ -30,13 +30,13 @@
 
 - name: Remove get-pip.py
   file:
-    path: ~/get-pip.py
+    path: $HOME/get-pip.py
     state: absent
   when: need_pip is failed
 
 - name: Install pip launcher
   copy:
     src: runner.sh
-    dest: ~/bin/pip
+    dest: $HOME/bin/pip
     mode: 0755
   when: need_pip is failed

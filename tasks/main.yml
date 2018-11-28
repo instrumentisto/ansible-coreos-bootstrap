@@ -1,6 +1,6 @@
 ---
 
-- name: Check if bootstrap is needed
+- name: Check if python is needed
   raw: "stat /opt/python/.bootstrapped_{{python_version}}_{{pypy_version}}"
   register: need_bootstrap
   ignore_errors: True

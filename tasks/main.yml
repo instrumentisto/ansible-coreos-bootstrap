@@ -1,27 +1,28 @@
 ---
 
-- name: Check if python is needed
-  raw: "stat /opt/python/.bootstrapped_{{python_version}}_{{pypy_version}}"
-  register: need_bootstrap
-  ignore_errors: True
+- name: Check if we need to install Python
+  raw: "stat {{ ansible_python_dir }}/.bootstrapped_{{ python_version }}_{{ pypy_version }}"
+  register: need_python
+  ignore_errors: yes
   changed_when: False
 
 - name: Run install_python.sh
   script: install_python.sh
   environment:
+    PYTHON_DIR: "{{ ansible_python_dir }}"
     PYTHON_VERSION: "{{ python_version }}"
     PYPY_VERSION: "{{ pypy_version }}"
-  when: need_bootstrap is failed
+  when: need_python is failed
+
 
 - name: Check if we need to install pip
   shell: "{{ ansible_python_interpreter }} -m pip --version"
   register: need_pip
   ignore_errors: yes
-  changed_when: false
-  when: need_bootstrap is failed
+  changed_when: False
 
 - name: Install pip
-  shell: "curl https://bootstrap.pypa.io/get-pip.py | {{ansible_python_interpreter}}"
+  shell: "curl https://bootstrap.pypa.io/get-pip.py | {{ ansible_python_interpreter }}"
   args:
     warn: false
   when: need_pip is failed
@@ -29,12 +30,6 @@
 - name: Install pip launcher
   copy:
     src: runner.sh
-    dest: /opt/python/bin/pip
+    dest: "{{ ansible_python_dir }}/bin/pip"
     mode: 0755
   when: need_pip is failed
-
-- name: Set bootstrapped file
-  file:
-    path: "/opt/python/.bootstrapped_{{python_version}}_{{pypy_version}}"
-    state: touch
-  changed_when: false

@@ -1,7 +1,7 @@
 coreos-bootstrap
 ================
 
-[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![PyPy](https://img.shields.io/badge/Portable%20PyPy-6.0.0-blue.svg)](https://github.com/squeaky-pl/portable-pypy)
+[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![Python](https://img.shields.io/badge/Python-3.5-blue.svg)](https://github.com/squeaky-pl/portable-pypy) [![PyPy](https://img.shields.io/badge/Portable%20PyPy-6.0.0-blue.svg)](https://github.com/squeaky-pl/portable-pypy)
 
 In order to effectively run [Ansible], the target machine needs to have a [Python] interpreter. [CoreOS] machines are minimal and do not ship with any version of [Python]. To get around this limitation we can install [PyPy], a lightweight [Python] interpreter. The `coreos-bootstrap` role will install [PyPy] for us and we will update our inventory file to use the installed python interpreter.
 

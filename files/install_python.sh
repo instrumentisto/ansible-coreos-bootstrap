@@ -17,7 +17,7 @@ if [[ -e "$tarFile" ]]; then
   tar -xjf "$tarFile"
   rm -rf "$tarFile"
 else
-  wget -O - "https://github.com/squeaky-pl/portable-pypy/releases/download/pypy$PYTHON_VERSION-$PYPY_VERSION/$pypyFile.tar.bz2" | tar -xjf -
+  wget -O - ${envsubst $PYPY_DOWNLOAD_TEMPLATE_URL} | tar -xjf -
 fi
 
 mv -n "$pypyFile" pypy

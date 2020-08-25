@@ -12,7 +12,7 @@
     PYTHON_DIR: "{{ ansible_python_dir }}"
     PYTHON_VERSION: "{{ python_version }}"
     PYPY_VERSION: "{{ pypy_version }}"
-    PYPY_DOWNLOAD_TEMPLATE_URL: "{{ pypy_download_template_url }}"
+    PYPY_OVERRIDE_DOWNLOAD_URL: "{{ pypy_override_download_url|default('') }}"
   when: need_python is failed
 
 

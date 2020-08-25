@@ -4,4 +4,4 @@ ansible_python_interpreter: "{{ ansible_python_dir }}/bin/python"
 
 python_version: "3.6"
 pypy_version: "7.2.0"
-pypy_download_template_url: "https://github.com/squeaky-pl/portable-pypy/releases/download/pypy$PYTHON_VERSION-$PYPY_VERSION/$pypyFile.tar.bz2"
+pypy_override_download_url: null

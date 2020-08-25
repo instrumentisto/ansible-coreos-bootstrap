@@ -12,12 +12,13 @@ cd "$PYTHON_DIR"
 
 pypyFile="pypy$PYTHON_VERSION-$PYPY_VERSION-linux_x86_64-portable"
 tarFile="$PYTHON_DIR/$pypyFile.tar.bz2"
+pypyUrl=${PYPY_OVERRIDE_DOWNLOAD_URL:-"https://github.com/squeaky-pl/portable-pypy/releases/download/pypy$PYTHON_VERSION-$PYPY_VERSION/$pypyFile.tar.bz2"}
 
 if [[ -e "$tarFile" ]]; then
   tar -xjf "$tarFile"
   rm -rf "$tarFile"
 else
-  wget -O - "https://github.com/squeaky-pl/portable-pypy/releases/download/pypy$PYTHON_VERSION-$PYPY_VERSION/$pypyFile.tar.bz2" | tar -xjf -
+  wget -O - "$pypyUrl" | tar -xjf -
 fi
 
 mv -n "$pypyFile" pypy

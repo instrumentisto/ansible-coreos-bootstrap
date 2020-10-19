@@ -6,6 +6,33 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+## [2.1.0] · 2020-10-19
+
+[Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/2.0.0...2.1.0)
+
+#### Added
+
+- Allow to override download URL for PyPy ([#7], [#6])
+
+#### Changed
+
+- Use GitHub releases instead of BitBucket for downloading portable PyPy ([#5])
+- Upgrade Python to [3.6][Python 3.6] version and PyPy to [7.2.0][Pypy 7.2.0] version ([#5])
+
+#### Fixed
+
+- Pip launcher installing ([31e9fb9])
+- Bootstrapped file creation ([2e0dfbd])
+
+[#5]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/5
+[#6]: https://github.com/instrumentisto/ansible-coreos-bootstrap/issues/6
+[#7]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/7
+[31e9fb9]: https://github.com/instrumentisto/ansible-coreos-bootstrap/commit/31e9fb9e7119e85c39bc1938c15c5df75b8ecad9
+[2e0dfbd]: https://github.com/instrumentisto/ansible-coreos-bootstrap/commit/2e0dfbd4b47d623e75c287ca3f2b31ced163ead3
+
+
+
+
 ## [2.0.0] · 2018-11-28
 
 [Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/1.0.0...2.0.0)
@@ -50,6 +77,7 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+[2.1.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/2.1.0
 [2.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/2.0.0
 [1.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/1.0.0
 
@@ -58,4 +86,6 @@ All user visible changes to this project will be documented in this file. This p
 [portable PyPy]: https://github.com/squeaky-pl/portable-pypy
 [PyPy]: https://pypy.org
 [Python 3.5]: https://www.python.org/downloads/release/python-350
+[Python 3.6]: https://www.python.org/downloads/release/python-360
+[Pypy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
 [Semantic Versioning 2.0.0]: https://semver.org

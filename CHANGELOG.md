@@ -12,17 +12,17 @@ All user visible changes to this project will be documented in this file. This p
 
 #### Added
 
-- Allow to override download URL for PyPy ([#7], [#6])
+- Ability to override download URL for [PyPy] ([#7], [#6]).
 
 #### Changed
 
-- Use GitHub releases instead of BitBucket for downloading portable PyPy ([#5])
-- Upgrade Python to [3.6][Python 3.6] version and PyPy to [7.2.0][Pypy 7.2.0] version ([#5])
+- Use GitHub releases instead of BitBucket for downloading [portable PyPy] ([#5]).
+- Upgrade Python to [3.6][Python 3.6] version and [PyPy] to [7.2.0][PyPy 7.2.0] version ([#5]).
 
 #### Fixed
 
-- Pip launcher installing ([31e9fb9])
-- Bootstrapped file creation ([2e0dfbd])
+- [pip] launcher installing ([31e9fb9]).
+- `.bootstrapped` file creation ([2e0dfbd]).
 
 [#5]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/5
 [#6]: https://github.com/instrumentisto/ansible-coreos-bootstrap/issues/6
@@ -87,5 +87,5 @@ All user visible changes to this project will be documented in this file. This p
 [PyPy]: https://pypy.org
 [Python 3.5]: https://www.python.org/downloads/release/python-350
 [Python 3.6]: https://www.python.org/downloads/release/python-360
-[Pypy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
+[PyPy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
 [Semantic Versioning 2.0.0]: https://semver.org

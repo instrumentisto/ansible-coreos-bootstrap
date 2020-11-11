@@ -12,12 +12,12 @@ All user visible changes to this project will be documented in this file. This p
 
 #### BC Breaks
 
-- Drop support of [Container Linux CoreOS]
+- Drop support for [Container Linux CoreOS]
 - Switch from [portable PyPy] to official [PyPy] builds ([squeaky-pl/portable-pypy #97])
 
 #### Added
 
-- Add support of [Fedora CoreOS]
+- Add support for [Fedora CoreOS]
 
 #### Changed
 

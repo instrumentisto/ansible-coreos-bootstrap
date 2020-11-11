@@ -6,7 +6,7 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
-## [3.0.0] · 2020-11-??
+## [3.0.0] · 2020-11-11
 
 [Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/2.1.0...3.0.0)
 
@@ -24,7 +24,7 @@ All user visible changes to this project will be documented in this file. This p
 - Upgrade [PyPy] to [7.3.2][PyPy 7.3.2] ([#10]).
 
 [squeaky-pl/portable-pypy#97]: https://github.com/squeaky-pl/portable-pypy/issues/97
-[#10]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/7
+[#10]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/10
 
 
 

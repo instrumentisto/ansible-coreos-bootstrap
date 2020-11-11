@@ -12,18 +12,19 @@ All user visible changes to this project will be documented in this file. This p
 
 #### BC Breaks
 
-- Drop support for [Container Linux CoreOS]
-- Switch from [portable PyPy] to official [PyPy] builds ([squeaky-pl/portable-pypy #97])
+- Drop support for [Container Linux CoreOS] ([#10]).
+- Switch from [portable PyPy] to official [PyPy] builds ([squeaky-pl/portable-pypy#97], [#10]).
 
 #### Added
 
-- Add support for [Fedora CoreOS]
+- Support for [Fedora CoreOS] ([#10]).
 
 #### Changed
 
-- Upgrade [PyPy] to [7.3.2][PyPy 7.3.2]
+- Upgrade [PyPy] to [7.3.2][PyPy 7.3.2] ([#10]).
 
-[squeaky-pl/portable-pypy #97]: https://github.com/squeaky-pl/portable-pypy/issues/97
+[squeaky-pl/portable-pypy#97]: https://github.com/squeaky-pl/portable-pypy/issues/97
+[#10]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/7
 
 
 
@@ -104,9 +105,9 @@ All user visible changes to this project will be documented in this file. This p
 [2.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/2.0.0
 [1.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/1.0.0
 
-[Fedora CoreOS]: https://getfedora.org/en/coreos
-[Container Linux CoreOS]: https://coreos.com/os/docs/latest/
 [Ansible]: https://www.ansible.com
+[Container Linux CoreOS]: https://coreos.com/os/docs/latest
+[Fedora CoreOS]: https://getfedora.org/en/coreos
 [pip]: https://pypi.org/project/pip
 [portable PyPy]: https://github.com/squeaky-pl/portable-pypy
 [PyPy]: https://pypy.org

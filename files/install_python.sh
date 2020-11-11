@@ -6,23 +6,11 @@ set -e
 if [[ -d "$PYTHON_DIR" ]]; then
   rm -rf "$PYTHON_DIR"
 fi
-mkdir -p "$PYTHON_DIR"
+mkdir -p "$PYTHON_DIR/pypy/"
 cd "$PYTHON_DIR"
 
-
-pypyFile="pypy$PYTHON_VERSION-$PYPY_VERSION-linux_x86_64-portable"
-tarFile="$PYTHON_DIR/$pypyFile.tar.bz2"
-pypyUrl=${PYPY_OVERRIDE_DOWNLOAD_URL:-"https://github.com/squeaky-pl/portable-pypy/releases/download/pypy$PYTHON_VERSION-$PYPY_VERSION/$pypyFile.tar.bz2"}
-
-if [[ -e "$tarFile" ]]; then
-  tar -xjf "$tarFile"
-  rm -rf "$tarFile"
-else
-  wget -O - "$pypyUrl" | tar -xjf -
-fi
-
-mv -n "$pypyFile" pypy
-
+pypyUrl=${PYPY_OVERRIDE_DOWNLOAD_URL:-"https://downloads.python.org/pypy/pypy$PYTHON_VERSION-v$PYPY_VERSION-linux64.tar.bz2"}
+curl -L "$pypyUrl" | tar -C pypy --strip-components 1 -xjf -
 
 mkdir -p "$PYTHON_DIR/bin/"
 

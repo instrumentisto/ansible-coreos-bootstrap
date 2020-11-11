@@ -6,6 +6,29 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+## [3.0.0] · 2020-11-11
+
+[Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/2.1.0...3.0.0)
+
+#### BC Breaks
+
+- Drop support for [Container Linux CoreOS] ([#10]).
+- Switch from [portable PyPy] to official [PyPy] builds ([squeaky-pl/portable-pypy#97], [#10]).
+
+#### Added
+
+- Support for [Fedora CoreOS] ([#10]).
+
+#### Changed
+
+- Upgrade [PyPy] to [7.3.2][PyPy 7.3.2] ([#10]).
+
+[squeaky-pl/portable-pypy#97]: https://github.com/squeaky-pl/portable-pypy/issues/97
+[#10]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/10
+
+
+
+
 ## [2.1.0] · 2020-10-19
 
 [Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/2.0.0...2.1.0)
@@ -77,15 +100,19 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+[3.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/3.0.0
 [2.1.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/2.1.0
 [2.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/2.0.0
 [1.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/1.0.0
 
 [Ansible]: https://www.ansible.com
+[Container Linux CoreOS]: https://coreos.com/os/docs/latest
+[Fedora CoreOS]: https://getfedora.org/en/coreos
 [pip]: https://pypi.org/project/pip
 [portable PyPy]: https://github.com/squeaky-pl/portable-pypy
 [PyPy]: https://pypy.org
 [Python 3.5]: https://www.python.org/downloads/release/python-350
 [Python 3.6]: https://www.python.org/downloads/release/python-360
 [PyPy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
+[PyPy 7.3.2]: http://doc.pypy.org/en/latest/release-v7.3.2.html
 [Semantic Versioning 2.0.0]: https://semver.org

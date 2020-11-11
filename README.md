@@ -1,12 +1,18 @@
 coreos-bootstrap
 ================
 
-[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![Python](https://img.shields.io/badge/Python-3.6-blue.svg)](https://github.com/squeaky-pl/portable-pypy) [![PyPy](https://img.shields.io/badge/Portable%20PyPy-7.2.0-blue.svg)](https://github.com/squeaky-pl/portable-pypy)
+[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![Python](https://img.shields.io/badge/Python-3.6-blue.svg)](https://www.pypy.org/) [![PyPy](https://img.shields.io/badge/PyPy-7.3.2-blue.svg)](https://www.pypy.org/)
 
-In order to effectively run [Ansible], the target machine needs to have a [Python] interpreter. [CoreOS] machines are minimal and do not ship with any version of [Python]. To get around this limitation we can install [PyPy], a lightweight [Python] interpreter. The `coreos-bootstrap` role will install [PyPy] for us and we will update our inventory file to use the installed python interpreter.
+Control [Fedora CoreOS] with Ansible.
+
+In order to effectively run [Ansible], the target machine needs to have a [Python] interpreter. [Fedora CoreOS] machines are minimal and do not ship with any version of [Python]. To get around this limitation we can install [PyPy], a lightweight [Python] interpreter. The `coreos-bootstrap` role will install [PyPy] for us and we will update our inventory file to use the installed python interpreter.
 
 
+## Installing Python on Fedora CoreOS
 
+At the moment, installing Python on [Fedora CoreOS] is not quite straightforward.
+
+You might need to disable [SELinux] or to use workarounds from [How to make ansible work in Fedora CoreOS again (coreos/fedora-coreos-tracker#592)](https://github.com/coreos/fedora-coreos-tracker/issues/592).
 
 ## Install
 
@@ -112,7 +118,8 @@ After bootstrap, you can use [Ansible] as usual to manage system services, insta
 
 
 [Ansible]: https://docs.ansible.com
-[CoreOS]: https://coreos.com/why
+[Fedora CoreOS]: https://getfedora.org/en/coreos
 [Nginx]: https://hub.docker.com/_/nginx
 [PyPy]: http://pypy.org
 [Python]: https://www.python.org
+[SELinux]: https://www.redhat.com/en/topics/linux/what-is-selinux

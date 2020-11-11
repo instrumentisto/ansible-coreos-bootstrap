@@ -3,5 +3,5 @@ ansible_python_dir: /opt/python
 ansible_python_interpreter: "{{ ansible_python_dir }}/bin/python"
 
 python_version: "3.6"
-pypy_version: "7.2.0"
+pypy_version: "7.3.2"
 pypy_override_download_url: null

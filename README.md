@@ -1,7 +1,7 @@
 coreos-bootstrap
 ================
 
-[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![Python](https://img.shields.io/badge/Python-3.6-blue.svg)](https://github.com/squeaky-pl/portable-pypy) [![PyPy](https://img.shields.io/badge/Portable%20PyPy-7.3.2-blue.svg)](https://github.com/squeaky-pl/portable-pypy)
+[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![Python](https://img.shields.io/badge/Python-3.6-blue.svg)](https://www.pypy.org/) [![PyPy](https://img.shields.io/badge/PyPy-7.3.2-blue.svg)](https://www.pypy.org/)
 
 Experimental branch for [Fedora CoreOS][CoreOS].
 

@@ -4,10 +4,12 @@ dependencies: []
 galaxy_info:
   role_name: coreos-bootstrap
   author: instrumentisto
-  description: Bootstrap CoreOS hosts to run Ansible
+  description: Bootstrap Flatcar Linux hosts to run Ansible
   license: MIT
   min_ansible_version: 2.5
   galaxy_tags:
     - system
     - coreos
     - python
+    - flatcar
+    - flatcar-linux

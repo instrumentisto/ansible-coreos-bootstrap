@@ -3,7 +3,7 @@
 - name: Check if we need to install Python
   raw: "stat {{ ansible_python_dir }}/.bootstrapped_{{ python_version }}_{{ pypy_version }}"
   register: need_python
-  ignore_errors: yes
+  failed_when: false
   changed_when: False
 
 - name: Run install_python.sh
@@ -13,20 +13,20 @@
     PYTHON_VERSION: "{{ python_version }}"
     PYPY_VERSION: "{{ pypy_version }}"
     PYPY_OVERRIDE_DOWNLOAD_URL: "{{ pypy_override_download_url|default('') }}"
-  when: need_python is failed
+  when: need_python.rc != 0
 
 
 - name: Check if we need to install pip
   shell: "{{ ansible_python_interpreter }} -m pip --version"
   register: need_pip
-  ignore_errors: yes
+  failed_when: false
   changed_when: False
 
 - name: Install pip
   shell: "curl {{ pypy_pip_bootstrap_url }} | {{ ansible_python_interpreter }}"
   args:
     warn: false
-  when: need_pip is failed
+  when: need_pip.rc != 0
 
 - name: Install pip launcher
   copy:
@@ -36,4 +36,4 @@
       #!/bin/sh
       LD_LIBRARY_PATH={{ ansible_python_dir }}/pypy/lib:$LD_LIBRARY_PATH \
         exec {{ ansible_python_dir }}/pypy/bin/$(basename $0) $@
-  when: need_pip is failed
+  when: need_pip.rc != 0

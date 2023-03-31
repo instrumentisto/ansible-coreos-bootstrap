@@ -1,5 +1,5 @@
-Change Log
-==========
+Change Log [Continued in the `master` branch]
+=============================================
 
 All user visible changes to this project will be documented in this file. This project uses to [Semantic Versioning 2.0.0].
 
@@ -89,3 +89,4 @@ All user visible changes to this project will be documented in this file. This p
 [Python 3.6]: https://www.python.org/downloads/release/python-360
 [PyPy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
 [Semantic Versioning 2.0.0]: https://semver.org
+[Continued in the `master` branch]: https://github.com/instrumentisto/ansible-coreos-bootstrap/blob/master/CHANGELOG.md

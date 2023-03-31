@@ -24,8 +24,6 @@
 
 - name: Install pip
   shell: "curl https://bootstrap.pypa.io/get-pip.py | {{ ansible_python_interpreter }}"
-  args:
-    warn: false
   when: need_pip is failed
 
 - name: Install pip launcher

@@ -24,8 +24,6 @@
 
 - name: Install pip
   shell: "curl {{ pypy_pip_bootstrap_url }} | {{ ansible_python_interpreter }}"
-  args:
-    warn: false
   when: need_pip.rc != 0
 
 - name: Install pip launcher

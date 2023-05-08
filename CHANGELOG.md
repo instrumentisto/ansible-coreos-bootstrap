@@ -16,6 +16,7 @@ All user visible changes to this project will be documented in this file. This p
 - Fix incompatibility with Ansible 7 ([#13])
 - Don't print error message if stat fails ([#12])
 
+[#12]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/12
 
 
 
@@ -28,6 +29,7 @@ All user visible changes to this project will be documented in this file. This p
 
 - Fix incompatibility with Ansible 7 ([#13])
 
+[#13]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/13
 
 
 

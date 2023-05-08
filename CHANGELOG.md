@@ -6,6 +6,31 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+## [3.2.0] · 2023-05-08
+[3.2.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/3.2.0
+
+[Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/3.1.0...3.2.0)
+
+### Fixed
+
+- Fix incompatibility with Ansible 7 ([#13])
+- Don't print error message if stat fails ([#12])
+
+
+
+
+## [2.2.0] · 2023-05-08
+[2.2.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/2.2.0
+
+[Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/2.1.0...2.2.0)
+
+### Fixed
+
+- Fix incompatibility with Ansible 7 ([#13])
+
+
+
+
 ## [3.1.0] · 2022-02-01
 [3.1.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/3.1.0
 

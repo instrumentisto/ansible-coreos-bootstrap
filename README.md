@@ -1,7 +1,10 @@
 coreos-bootstrap
 ================
 
-[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest) [![Build Status](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap.svg?branch=master)](https://travis-ci.org/instrumentisto/ansible-coreos-bootstrap) [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.pypy.org/) [![PyPy](https://img.shields.io/badge/PyPy-7.3.19-blue.svg)](https://www.pypy.org/)
+[![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest)
+[![CI](https://github.com/instrumentisto/ansible-coreos-bootstrap/actions/workflows/ci.yml/badge.svg?branch=master "CI")](https://github.com/instrumentisto/ansible-coreos-bootstrap/actions?query=workflow%3ACI+branch%3Amaster)
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.pypy.org)
+[![PyPy](https://img.shields.io/badge/PyPy-7.3.19-blue.svg)](https://www.pypy.org)
 
 Control [Fedora CoreOS] with Ansible.
 

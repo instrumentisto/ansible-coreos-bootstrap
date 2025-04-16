@@ -54,21 +54,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Parse semver versions from Git tag
-        id: semver
-        uses: actions-ecosystem/action-regex-match@v2
-        with:
-          text: ${{ github.ref }}
-          regex: '^refs/tags/((([0-9]+)\.[0-9]+)(\.[0-9]+)?-(.+))$'
+      - name: Parse release version
+        id: release
+        run: echo "version=${GITHUB_REF#refs/tags/}"
+             >> $GITHUB_OUTPUT
 
       - name: Parse CHANGELOG link
         id: changelog
-        run: echo "link=${{ github.server_url }}/${{ github.repository }}/blob/${{ steps.semver.outputs.group1 }}/CHANGELOG.md#$(sed -n '/^## \[${{ steps.semver.outputs.group1 }}\]/{s/^## \[\(.*\)\][^0-9]*\([0-9].*\)/\1--\2/;s/[^0-9a-z-]*//g;p;}' CHANGELOG.md)"
+        run: echo "link=${{ github.server_url }}/${{ github.repository }}/blob/${{ steps.release.outputs.version }}/CHANGELOG.md#$(sed -n '/^## \[${{ steps.release.outputs.version }}\]/{s/^## \[\(.*\)\][^0-9]*\([0-9].*\)/\1--\2/;s/[^0-9a-z-]*//g;p;}' CHANGELOG.md)"
              >> $GITHUB_OUTPUT
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ steps.semver.outputs.group1 }}
+          name: ${{ steps.release.outputs.version }}
           body: |
             [Changelog](${{ steps.changelog.outputs.link }})
+          prerelease: ${{ contains(steps.release.outputs.version, '-') }}

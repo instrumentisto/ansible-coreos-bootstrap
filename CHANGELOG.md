@@ -6,6 +6,29 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+## [4.0.0] · 2025-04-16
+[4.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/4.0.0
+
+[Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/3.2.0...4.0.0)
+
+### BC Breaks
+
+- Switch to [Python 3.11] in [PyPy] ([#14]).
+- Use new `pypy_pip_bootstrap_url` ([#14]).
+- Require `min_ansible_version: 7` ([#14]).
+
+### Added
+
+- Support for Ansible >=10.0 ([#14]).
+
+### Changed
+
+- Upgrade [PyPy] to [7.3.19][PyPy 7.3.19] ([#14]).
+
+[#14]: https://github.com/instrumentisto/ansible-coreos-bootstrap/pull/14
+
+
+
 ## [3.2.0] · 2023-05-08
 [3.2.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/3.2.0
 
@@ -152,6 +175,8 @@ All user visible changes to this project will be documented in this file. This p
 [PyPy]: https://pypy.org
 [Python 3.5]: https://www.python.org/downloads/release/python-350
 [Python 3.6]: https://www.python.org/downloads/release/python-360
+[Python 3.11]: https://www.python.org/downloads/release/python-3110
 [PyPy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
 [PyPy 7.3.2]: http://doc.pypy.org/en/latest/release-v7.3.2.html
+[PyPy 7.3.19]: http://doc.pypy.org/en/latest/release-v7.3.19.html
 [Semantic Versioning 2.0.0]: https://semver.org

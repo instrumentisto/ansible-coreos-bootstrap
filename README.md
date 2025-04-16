@@ -2,7 +2,7 @@ coreos-bootstrap
 ================
 
 [![GitHub release](https://img.shields.io/github/release/instrumentisto/ansible-coreos-bootstrap.svg)](https://github.com/instrumentisto/ansible-coreos-bootstrap/releases/latest)
-[![CI](https://github.com/instrumentisto/ansible-coreos-bootstrap/actions/workflows/ci.yml/badge.svg?branch=master "CI")](https://github.com/instrumentisto/ansible-coreos-bootstrap/actions?query=workflow%3ACI+branch%3Amaster)
+[![CI](https://github.com/instrumentisto/ansible-coreos-bootstrap/actions/workflows/ci.yml/badge.svg?branch=main "CI")](https://github.com/instrumentisto/ansible-coreos-bootstrap/actions?query=workflow%3ACI+branch%3Amain)
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.pypy.org)
 [![PyPy](https://img.shields.io/badge/PyPy-7.3.19-blue.svg)](https://www.pypy.org)
 
@@ -23,7 +23,7 @@ Add to your `requirements.yml`:
 ```yaml
 - name: instrumentisto.coreos-bootstrap
   src: git+https://github.com/instrumentisto/ansible-coreos-bootstrap
-  version: master
+  version: 4.0.0
 ```
 
 And resolve your dependencies:

@@ -2,7 +2,7 @@ The MIT License (MIT)
 =====================
 
 Copyright © 2014 Roman Shtylman
-Copyright © 2018 Instrumentisto Team, https://github.com/instrumentisto
+Copyright © 2018-2025 Instrumentisto Team, <https://github.com/instrumentisto>
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

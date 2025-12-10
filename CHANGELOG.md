@@ -6,6 +6,17 @@ All user visible changes to this project will be documented in this file. This p
 
 
 
+## [4.0.1] · 2025-12-10
+[4.0.1]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/4.0.1
+
+[Diff](https://github.com/instrumentisto/ansible-coreos-bootstrap/compare/4.0.0...4.0.1)
+
+### Changed
+
+- Bump [PyPy] to [7.3.20][PyPy 7.3.20].
+
+
+
 ## [4.0.0] · 2025-04-16
 [4.0.0]: https://github.com/instrumentisto/ansible-coreos-bootstrap/tree/4.0.0
 
@@ -179,4 +190,5 @@ All user visible changes to this project will be documented in this file. This p
 [PyPy 7.2.0]: http://doc.pypy.org/en/latest/release-v7.2.0.html
 [PyPy 7.3.2]: http://doc.pypy.org/en/latest/release-v7.3.2.html
 [PyPy 7.3.19]: http://doc.pypy.org/en/latest/release-v7.3.19.html
+[PyPy 7.3.20]: http://doc.pypy.org/en/latest/release-v7.3.20.html
 [Semantic Versioning 2.0.0]: https://semver.org
